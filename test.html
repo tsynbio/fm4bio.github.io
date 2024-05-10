@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Zone Converter</title>
+</head>
+<body>
+    <h1>Time Zone Converter</h1>
+    <table id="timeTable">
+        <tr>
+            <th>City</th>
+            <th>Time (Tokyo)</th>
+            <th>Time (Local)</th>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td id="tokyoTime">12:00</td>
+            <td id="localTime">Loading...</td>
+        </tr>
+        <tr>
+            <td>Tokyo</td>
+            <td id="tokyoTime">14:00</td>
+            <td id="localTime">Loading...</td>
+        </tr>
+    </table>
+
+        <!-- Your JavaScript code to update the local time based on the Tokyo time can go here -->
+    <script>
+        // Example JavaScript code to update the local time based on Tokyo time
+        // This is just a placeholder and will not work in the browser without implementing the actual update logic
+        // You might need to use a proper timezone conversion library to calculate the local time correctly.
+
+        // Get the Tokyo time element
+        const tokyoTimeElement = document.getElementById('tokyoTime');
+        // Get the Local time element
+        const localTimeElement = document.getElementById('localTime');
+
+        // Function to convert Tokyo time to Local time
+        function convertToLocaleTime(tokyoTime) {
+            // Your conversion logic here
+            // For example, you might use Intl.DateTimeFormat or other libraries to handle timezones
+            return tokyoTime;
+        }
+
+        // Update the Local time
+        localTimeElement.textContent = convertToLocaleTime(tokyoTimeElement.textContent);
+    </script>
+</body>
+</html>

@@ -1,0 +1,1173 @@
+<!doctype html>
+<!-- FlatFy Theme - Andrea Galanti /-->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+
+<head>
+  <style>
+  table {
+    border-collapse: collapse;
+    line-height: 3;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+
+<!-- <script>
+// Timezone converter function 
+function convertTime(date, offset) {
+  var utcDate = new Date(date.toLocaleString('en-US', {timeZone: 'Asia/Tokyo'}));
+  var newDate = new Date(utcDate.getTime() + (offset*60*60*1000));
+  return newDate.toLocaleTimeString(); 
+}
+
+// Get user's timezone offset
+var offset = new Date().getTimezoneOffset()/60; 
+
+// Convert times on page load
+window.onload = function() {
+  var times = document.querySelectorAll("td:nth-child(2)");
+  for(var i=0; i<times.length; i++) {
+    var tokyoTime = times[i].textContent; 
+    var localTime = convertTime(new Date("08/21/2023 " + tokyoTime), offset);
+    times[i].textContent = localTime;
+  }
+}
+
+</script> -->
+
+</head>
+
+
+
+
+  
+  
+<!--<![endif]-->
+<script>
+function showhide(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Workshop at the 36th Conference on Neural Information Processing Systems">
+<meta name="author" content="">
+<title>Mathematics of Geometric Deep Learning</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Google Web Font -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+
+<!-- Custom CSS-->
+<link href="css/general.css" rel="stylesheet">
+
+<!-- Owl-Carousel -->
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<script src="js/modernizr-2.8.3.min.js"></script> <!-- Modernizr /-->
+<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="home">
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+
+<!-- FullScreen -->
+<div class="intro-header">
+  <div class="col-xs-12 text-center abcen1">
+    <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">MATHEMATICS OF GEOMETRIC<br /> DEEP LEARNING</h1>
+    <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Minisymposium at the 10th International Congress on Industrial and Applied Mathematics</h3>
+    <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">August 20-25, 2023</h3>
+  <!--   <ul class="list-inline intro-social-buttons">
+      <a href="https://neurips.cc/virtual/2022/workshop/50005" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Livestream</span></a> </li>
+    </ul> -->
+  </div>
+  <!-- /.container -->
+  <div class="col-xs-12 text-center abcen wow fadeIn">
+    <div class="button_down "> <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#about"> <img class="img_scroll" src="img/icon/circle.png" alt="Go down to content"> </a> </div>
+  </div>
+</div>
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="https://iciam2023.org/">ICIAM 2023</a> </div>
+      <!-- <a class="navbar-brand" href="#home">MGDL</a> </div> -->
+    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="menuItem"><a href="#about">About</a></li>
+        <!-- <li class="menuItem"><a href="#callforpapers">Call for Papers</a></li> -->
+        <li class="menuItem"><a href="#faq">FAQ</a></li>
+        <li class="menuItem"><a href="#invitedspeakers">Invited Speakers</a></li>
+        <!-- <li class="menuItem"><a href="#preregistration">Pre-Registration</a></li> -->
+        <li class="menuItem"><a href="#schedule">Schedule</a></li>
+        <!-- <li class="menuItem"><a href="#accepted">Accepted Papers</a></li> -->
+        <li class="menuItem"><a href="#organizers">Organizers</a></li>
+        <!--<li class="menuItem"><a href="#related">Related Workshops</a></li> -->
+        <li class="menuItem"><a href="#sponsors">Sponsors</a></li>
+        <!-- <li class="menuItem"><a href="#contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About -->
+<div id="about" class="content-section-a" style="border-top: 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInLeftBig" data-animation-delay="200">
+        <h2 class="section-heading">About</h2>
+        <p class="lead"> Geometric deep learning has important applications in the fields of quantum computing, 3D perception, molecular designs, and the discovery of mathematical theorems. It takes account of properties such as invariance and equivariance. Many existing structure-aware deep networks lack rigorous theoretical foundations of desired properties in modelling, such as network stability, interpretability, and efficient computation. This workshop will gather researchers from mathematics and computer sciences to provide a forum to establish diverse mathematical theories for geometric deep learning, such as harmonic analysis, algebraic topology, algebraic geometry, combinatorics, differential geometry, differential equations, graph theory, approximation theory, statistics, and theoretical computer science. </p>
+        <!-- <p class="lead">Our workshop, "Mathematics of Geometric Deep Learning” (MGDL), .... </p> -->
+        <!-- <p class="lead"> MGDL will be an in-person AND online workshop with hybrid elements (livestream + chat for questions) in <b>Room 288 - 289 on Saturday, December 3rd, 2022</b> at <a href="https://neurips.cc">NeurIPS</a>. </p> -->
+        <!-- <p class="lead"> Stay updated on changes and workshop news by joining <a href="https://groups.google.com/g/workshopmlsb">our mailing list</a>. </p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div id ="faq" class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInLeftBig" data-animation-delay="200">
+        <h2 class="section-heading">FAQ</h2>
+        <h3 class="section-heading">Event Photos</h3>
+        <p class="lead">Photos can be found at Google Drive: <a href="https://drive.google.com/drive/folders/1jJ4eDP1UF1jVhe-AIqhgcfi5uTbm9Z96?usp=sharing">https://drive.google.com/drive/folders/1jJ4eDP1UF1jVhe-AIqhgcfi5uTbm9Z96?usp=sharing</a> <br/>
+      <br/></p>
+
+        <h3 class="section-heading">ICIAM Program</h3>
+        <p class="lead">The congress schedule can be found at <a href="https://iciam2023.org/3051">https://iciam2023.org/3051</a> <br/>
+      For our MS, the schedule can be seen below, and also <a href="https://iciam2023.org/registered_data?id=00211">https://iciam2023.org/registered_data?id=00211</a> <br/></p>
+
+      <h3 class="section-heading">Zoom Event</h3>
+        <p class="lead">Our minisymposium is in hybrid format of in person talks and online talks. </br>
+          <b>Zoom for online talks</b>: </br>
+          <a href="https://iciam2023.org/3219#Zoom_Events">https://iciam2023.org/3219#Zoom_Events </a> <br/>
+          For non-registered participants, use the following link:
+          Join from PC, Mac, Linux, iOS or Android: <a href="https://unsw.zoom.us/j/83673273013?pwd=Q2hpalVUY3pwdlU4VFhHdmVCa25aZz09">https://unsw.zoom.us/j/83673273013?pwd=Q2hpalVUY3pwdlU4VFhHdmVCa25aZz09</a>
+          <br/>
+          Meeting ID: 83673273013<br/>
+          Password: 152671
+        </p>
+
+      <h3 class="section-heading">Direction to Session Venure</h3>
+          <p class="lead">Our session is in the campus of Waseda University <b>E812 of Building 11</b>. <br/>
+          
+            <div class="col-sm-12 wow fadeInDown text-center"> <img class="magnify img-square" src="img/venure/Waseda_map.jpg" alt="Waseda map" width="800px"><br/>
+              </div> <br/>
+          </p>
+       
+        <h3 class="section-heading">To Submit Talk</h3>
+        <p class="lead">Please log in the submission system at <a href="https://review.iciam2023.org/">https://review.iciam2023.org/</a> <br/>
+          Then choose <b>New Submission</b> with Minisymposium Identifier Code [MIC] as <b>VS6WWB55</b><br/>
+        There you can submit your talk and author information to be reviewed. </br>
+      The talk title and abstract and your bio will also be put on the this website. </br>
+      Please make submission at least one week before the <a href="https://iciam2023.org/555/">submission deadline April 20, 2023.</a> <br/></p>
+
+      <h3 class="section-heading">Registration</h3>
+      Registration deadline of the ICIAM 2023 is April 10, 2023. <br/>
+      The registration information (fees) can be found <a href="https://iciam2023.org/571/">https://iciam2023.org/571</a> <br/>
+      Registration page needs to also log in <a href="https://review.iciam2023.org/">https://review.iciam2023.org/</a>
+
+
+       <h3 class="section-heading">Visa Support / Invitation Letter</h3>
+       You will need a registration number to obtain an invitation letter for visa application. <br/>
+       Visa support can be applied in <a href="https://review.iciam2023.org/">https://iciam2023.org/1519/</a> <br/>
+       The cost of visa support is included in the registration fee.
+
+       <h3 class="section-heading">Hotel Reservation</h3>
+       During the conference time period, hotels in Tokyo are expected to be crowded. 
+     We highly recommend that you make your hotel reservations as soon as possible. In order to assist you, we have partnered with Waseda University Academic Solutions, Inc. (WAS) to offer discounted rates for hotel rooms. WAS, a subsidiary of Waseda University, has been providing administrative solutions for universities for many years.</br>
+       To access the <a href="https://iciam2023.org/578">hotel reservation page</a>, please visit the ICIAM 2023 website. Please note that the number of available rooms is limited, and we encourage you to carefully read the cancellation policy and take responsibility for any cancellations. It is important to note that many of the rooms offered at the discounted price will be closed by the end of March 2023. To make a reservation, please contact WAS directly.
+
+       For hotel information, please refer to <a href="https://iciam2023.org/578">https://iciam2023.org/578</a>
+
+       <h3 class="section-heading">Flight Ticket Reservations</h3>
+       To assist with your travel plans, we have requested that WAS offer <a href="https://iciam2023.org/2364">flight reservation support</a>. </br>
+       If you would like to reserve flights through WAS, please contact them directly </br> after carefully reviewing the cancellation policy and assuming responsibility for any cancellations.</br>
+
+       Flight reservation support: <a href="https://iciam2023.org/2364">https://iciam2023.org/2364/</a>
+
+       <h3 class="section-heading">Childcare</h3>
+       For those with children, the organizers are providing childcare during the conference:
+       <a href="https://iciam2023.org/3259">https://iciam2023.org/3259</a></br>
+
+
+
+
+
+
+      <!-- <h3 class="section-heading">Visa</h3>
+
+      <h3 class="section-heading">Hotel</h3>
+
+      <h3 class="section-heading">Travel Information</h3> -->
+        <!-- <p> <b>WIFI</b> <br/>
+          network name: NeurIPS <br/>
+          password: conference </p>
+
+        <p> <b>SCHEDULE</b> MLSB will begin at 8:30am CST and end at 5:00pm CST on Saturday, Dec 3. The physical workshop will take place in Room 288 - 289 in the New Orleans Convention Center. The schedule of talks and poster sessions is available at our website, mlsb.io and on the <a href="https://neurips.cc/virtual/2022/workshop/50005">NeurIPS website</a>. </p>
+        <p> <b>PANEL</b> -
+          We will be hosting a panel discussion including our invited speakers on research directions in Machine Learning for Structural Biology from 2:50-3:50p CST. We are soliciting additional discussion topics and questions -- let us know what you would like to hear about by filling out this google form: <a href="https://forms.gle/fiJ6ZzsmepKL87tMA">https://forms.gle/fiJ6ZzsmepKL87tMA</a>. </p>
+        <p> <b>POSTER SESSIONS</b> -
+          We have scheduled two poster sessions at 11:15-12:15pm CST and 3:50-4:50pm CST. Posters can be set up before the conference begins, between 8:00-8:30am, during the break between 9:45-10:05am, or at the beginning of the first poster session.
+
+          We ask that posters are 24"W x 36"H, as there may be space constraints in the room that limit the display of wider posters. However, if you already have a poster of a different size, it is acceptable to use that. </p>
+        <p> <b>LUNCH + HAPPY HOUR</b> -
+          MLSB will be providing boxed lunches to attendees during the workshop. In addition, there will be a happy hour during the afternoon poster session, where drinks will be served (non-alcoholic options will be available). </p>
+        <p> <b>ORALS</b> -
+          Each oral will have a 15 minute timeslot. We anticipate that talks should last approximately 10 minutes, allowing 5 minutes for questions and transition between speakers. If you are presenting in-person, you may check slides before the workshop (8:00-8:30am CST) or during the break (9:45-10:05am CST). </p>
+        <p> Please check the schedule on our website, mlsb.io, for your presentation time. If you are not able to make this time, let us know as soon as possible. Additionally, below we have listed the format we currently have for each oral presentation (In-person, Live over Zoom, or Prerecorded). If this information is not correct, please let us know. You can contact us at workshopmlsb@gmail.com with any issues. </p>
+        <p> <b>VIRTUAL PARTICIPATION</b> -
+          MLSB will have some hybrid elements. There will be a livestream (a link is available at the <a href="https://neurips.cc/virtual/2022/workshop/50005">NeurIPS website</a>. Chat will be available on the NeurIPS workshop site for asking questions.
+
+          Currently, there is no official venue for presenting posters virtually at MLSB. However, we are considering options to enable greater virtual participation over the next few days. If you have a poster at MLSB but plan to participate only virtually, please let us know by adding your name to this <a href="https://forms.gle/ntQDsULXaVkzVXYR8">google form</a> as soon as possible. </p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<div id ="callforpapers" class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInRightBig" data-animation-delay="200">
+        <h2 class="section-heading">Call For Papers</h2>
+        <p>We welcome submissions of short papers leveraging machine learning to address problems in structural biology, including but not limited to:</p>
+        <ul class="bulleted">
+          <li>Prediction of biomolecular structures, complexes, and interactions</li>
+          <li>Generative models for structure and/or sequence</li>
+          <li>Protein, RNA, and DNA design</li>
+          <li>Protein structure determination including cryo-EM/ET</li>
+          <li>Geometric and symmetry-aware deep learning</li>
+          <li>Conformational change, ensembles, and dynamics</li>
+          <li>Integration of biomolecular physics</li>
+          <li>Function and property prediction</li>
+          <li>Structural bioinformatics and systems biology</li>
+          <li>Language models and other representations of proteins</li>
+          <li>Forward-looking position papers</li>
+        </ul>
+        <p>We request anonymized PDF submissions by <strong>Thursday, September 29th, 2022, at 11:59PM</strong> anywhere on earth through our submission website on <a href="https://cmt3.research.microsoft.com/MLSB2022">CMT</a>. </p>
+        <p>Papers should present novel work that has not been previously accepted at an archival venue at the time of submission.  Submissions should be a <em>maximum</em> of 5 pages (excluding references and appendices) in PDF format, using the <a href="https://neurips.cc/Conferences/2022/PaperInformation/StyleFiles">NeurIPS style files</a>, and fully anonymized as per the requirements of NeurIPS. The NeurIPS checklist can be omitted from the submission. Submissions meeting these criteria will go through a light, double-blind review process. Reviewer comments will be returned to the authors as feedback.</p>
+        <p>Accepted papers will be invited to present a poster at the workshop, with nominations of spotlight talks at the discretion of the organizers.  This workshop is considered non-archival and does not publish proceedings, however authors of accepted contributions will have the option to make their work available through the workshop website. Presentation of work that is concurrently in submission is welcome. We welcome papers sharing encouraging work-in-progress results or forward-looking position papers that would benefit from feedback and community discussion at our workshop. </p>
+        <h3 class="section-heading">Important Dates</h3>
+        <p class="">Submission Deadline: <b>Thursday, September 29th, 2022, 11:59 PM, Anywhere on Earth.</b></p>
+        <p class="">Notification of Acceptance: Friday, October 20th, 2022.</p>
+        <p class="">Workshop Date: Saturday, December 3rd, 2022.</p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<div id="invitedspeakers" class="content-section-a" style="border-top: 0">
+  <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+    <h2>Keynote Speakers</h2> <br/>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/Xiaowen-Dong.jpg" alt="Xiaowen" width="200px" height="200px">
+        <h3>Xiaowen Dong</h3>
+        <p class="lead" style="margin-bottom:0;" >University of Oxford</p>
+        <a onclick="showhide('Xiaowen')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Xiaowen">
+          <p> Dr Xiaowen Dong is an Associate Professor in the Department of Engineering Science at the University of Oxford, where he is an academic member of both the Machine Learning Research Group and the Oxford-Man Institute. Prior to joining Oxford, he was a postdoctoral associate in the MIT Media Lab, where he remains as a research affiliate, and received his PhD degree from the Swiss Federal Institute of Technology (EPFL), Lausanne, Switzerland. His main research interests concern signal processing and machine learning techniques for analysing network data, and their applications in studying questions across social and economic sciences. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+      <!-- /.col-md-6 -->
+      <!-- <div class="col-sm-6 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/junbin.png" alt="Junbin" width="200px" height="200px">
+        <h3>Junbin Gao</h3>
+        <p class="lead" style="margin-bottom:0;">University of Sydney</p>
+        <a onclick="showhide('Junbin')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Junbin">
+          <p> Prof Junbin Gao graduated from Huazhong University of Science and Technology (HUST), China in 1982 with a BSc in Computational Mathematics and obtained his PhD from Dalian University of Technology, China in 1991. He is Professor of Big Data Analytics in the University of Sydney Business School at the University of Sydney and was a Professor in Computer Science in the School of Computing and Mathematics at Charles Sturt University, Australia. He was a senior lecturer, a lecturer in Computer Science from 2001 to 2005 at the University of New England, Australia. From 1982 to 2001 he was an associate lecturer, lecturer, associate professor, and professor in Department of Mathematics at HUST. His main research interests include machine learning, data analytics, Bayesian learning and inference, and image analysis. </p>
+        </div>
+      </div> -->
+      <!-- /.col-md-6 -->
+      <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/Gitta.jfif" alt="Gitta" width="200px" height="200px">
+        <h3>Gitta Kutyniok</h3>
+        <p class="lead" style="margin-bottom:0;">Ludwig Maximilian University of Munich</p>
+        <a onclick="showhide('Gitta')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Gitta">
+          <p>Prof Gitta Kutyniok currently has a Bavarian AI Chair for Mathematical Foundations of Artificial Intelligence at the Ludwig-Maximilians Universität München. She received her Diploma in Mathematics and Computer Science as well as her Ph.D. degree from the Universität Paderborn in Germany, and her Habilitation in Mathematics in 2006 at the Justus-Liebig Universität Gießen. From 2001 to 2008 she held visiting positions at several US institutions, including Princeton University, Stanford University, Yale University, Georgia Institute of Technology, and Washington University in St. Louis, and was a Nachdiplomslecturer at ETH Zurich in 2014. In 2008, she became a full professor of mathematics at the Universität Osnabrück, and moved to Berlin three years later, where she held an Einstein Chair in the Institute of Mathematics at the Technische Universität Berlin and a courtesy appointment in the Department of Computer Science and Engineering until 2020. In addition, Gitta Kutyniok holds an Adjunct Professorship in Machine Learning at the University of Tromso since 2019.
+          </p>
+          <p>Gitta has received various awards for her research such as an award from the Universität Paderborn in 2003, the Research Prize of the Justus-Liebig Universität Gießen and a Heisenberg-Fellowship in 2006, as well as the von Kaven Prize by the DFG in 2007. She was invited as the Noether Lecturer at the ÖMG-DMV Congress in 2013, the Hans Schneider ILAS Lecturer at IWOTA in 2016, a plenary lecturer at the 8th European Congress of Mathematics (8ECM) in 2021, the lecturer of the London Mathematical Society (LMS) Invited Lecture Series in 2022, for an invited lecture at the International Congress of Mathematics (ICM) 2022, and for an invited lecture at the International Congress on Industrial and Applied Mathematics (ICIAM) 2023. She also became a member of the Berlin-Brandenburg Academy of Sciences and Humanities in 2017, a SIAM Fellow in 2019, and a Simons Fellow at the Isaac Newton Institute in 2021; she received an Einstein Chair at TU Berlin in 2008, a Francqui Chair of the Belgian Francqui Foundation in 2020, and holds the first Bavarian AI Chair at LMU from 2020 on. She was Chair of the SIAM Activity Group on Imaging Sciences from 2018-2019, Vice Chair of the new SIAM Activity Group on Data Science in 2021, and currently serves as Vice President-at-Large of SIAM. She was also the main coordinator of the Long-Term Programe on "Mathematics of Deep Learning" at the Isaac Newton Institute in 2021 and is at present the spokesperson of the Research Focus "Next Generation AI" at the Center for Advanced Studies at LMU.
+            </p>
+            <p>
+            Her research work covers, in particular, the areas of applied and computational harmonic analysis, approximation theory, artificial intelligence, compressed sensing, frame theory, imaging sciences, inverse problems, machine learning, numerical analysis of partial differential equations, and applications to life sciences, robotics, and telecommunication. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+      <!-- /.col-lg-4 -->
+
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/guido.png" alt="Montufar" width="200px" height="200px">
+        <h3>Guido Montúfar</h3>
+        <p class="lead" style="margin-bottom:0;">UCLA/MPI MIS</p>
+        <a onclick="showhide('Guido')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Guido">
+          <p> Guido Montúfar is an Associate Professor of Mathematics and Statistics at UCLA and Head of the Math Machine Learning Group at the 
+            Max Planck Institute for Mathematics in the Sciences. His research focuses 
+            on deep learning theory and more generally mathematical
+            aspects of machine learning. He studied mathematics and theoretical
+            physics at TU Berlin, obtained the Dr.rer.nat. in 2012 as an IMPRS
+            fellow in Leipzig, and was a postdoc at PennState and MPI MiS, and has
+            been awarded an ERC Starting Grant and an NSF CAREER award. Guido
+            Montufar is a 2022 Alfred P. Sloan Research Fellow.
+            <a href="https://www.math.ucla.edu/~montufar/">https://www.math.ucla.edu/~montufar/</a>
+          </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
+  </br></br>
+    <!-- row -->
+    <div class="row">
+    <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/Bodnar.jfif" alt="Cristian" width="200px" height="200px">
+      <h3>Cristian Bodnar</h3>
+      <p class="lead" style="margin-bottom:0;">Microsoft Research</p>
+      <a onclick="showhide('Cristian')">Show/Hide Bio</a>
+      <div style="display: none; text-align: left; text-indent: 30px;" id="Cristian">
+        <p> Cris is a Senior Researcher at Microsoft Research in the AI4Science team where he is working at intersection of deep learning and partial differential equations (PDEs). 
+          On the ML side, his research spans a range of topics such as geometric & topological deep learning, graph neural networks and neural differential equations.
+
+          Previously, he finished his PhD at the University of Cambridge, supervised by Prof Pietro Liò and supported by a Microsoft Research PhD Fellowship (2021). 
+          He has also spent significant time in industry as a research intern at Microsoft Research (2022), Twitter Cortex (2021), Google Brain (2020), and as an AI Resident at Google X (2019). 
+          In 2019, he graduated with distinction the MPhil in Advanced Computer Science at Cambridge with a Best MPhil Student Award. </p>
+      </div>
+      <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+    </div>
+
+    <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/Giovanni.jpg" alt="Francesco" width="200px" height="200px">
+      <h3>Francesco Di Giovanni</h3>
+      <p class="lead" style="margin-bottom:0;">University of Cambridge</p>
+      <a onclick="showhide('Francesco')">Show/Hide Bio</a>
+      <div style="display: none; text-align: left; text-indent: 30px;" id="Francesco">
+        <p> Francesco is an ML Researcher currently working at University of Cambridge with Pietro Lio. His research is focused on the theory of graph neural networks, especially on oversquashing of GNNs.
+          Previously, he worked at Twitter with Michael Bronstein on geometry-inspired ideas applied in the context of graph machine learning. He completed a PhD in Riemannian geometry focussing on singularity formation of symmetric Ricci flows at UCL under the supervision of Jason Lotay. </p>
+      </div>
+    </div>
+  </div>
+    </div>
+
+  </div>
+  <!-- /.row -->
+</div>
+
+<div class="content-section-a" style="border-top: 0">
+  <div class="container">
+    <div class="col-md-6 col-md-offset-3 text-center wrap_title">
+    <h2>Invited  Speakers</h2> <br/>
+    </div>
+
+    <!-- row 2-->
+    <div class="row tworow">
+      <!-- row 2 col 1-->
+      <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/NHuang.jpg" alt="Ningyuan" width="200px" height="200px">
+        <h3>Ningyuan (Teresa) Huang</h3>
+        <p class="lead" style="margin-bottom:0;">Johns Hopkins University</p>
+        <a onclick="showhide('Ningyuan')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Ningyuan">
+          <p>Teresa is a PhD candidate in the Department of Applied Mathematics & Statistics at Johns Hopkins University. She is co-advised by Professor Soledad Villar and Professor Carey Priebe.
+             She is passionate about understanding learning — including machine learning and natural learning — from mathematical and statistical principles.
+            Her research interests are in the areas of representation learning and deep learning. Her current work focuses on spectral-inspired graph neural networks, and generalization and robustness in deep learning.</p>
+        </div>
+      </div>
+
+      <!-- row 2 col 2-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/lin_liu.jpg" alt="Lin" width="200px" height="200px">
+        <h3>Lin Liu</h3>
+        <p class="lead" style="margin-bottom:0;">Shanghai Jiao Tong University</p>
+        <a onclick="showhide('Lin')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Lin">
+          <p> Prof Lin Liu is an Assistant Professor at the Institute of Natural Sciences (INS) at Shanghai Jiao Tong University (SJTU). I am also affiliated with the School of Mathematical Sciences and the SJTU-YALE Joint Center for Biostatistics and Data Science.
+          He graduated from the Department of Biostatistics at Harvard University in 2018. His advisors are Professor Franziska Michor and Professor James M. Robins. His current research lies in nonparametric, semiparametric and high-dimensional statistics, robust statistical methods, causal inference, computational and mathematical biology.
+            He is also interested in the theory of deep learning, estimation and inference in inverse problems and applying causal inference tools in biomedical research.
+            </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+     
+     <!-- row 2 col 3-->
+    <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/qiye.png" alt="QiYe" width="200px" height="200px">
+      <h3>Qi Ye</h3>
+      <p class="lead" style="margin-bottom:0;">South China Normal University</p>
+      <a onclick="showhide('QiYe')">Show/Hide Bio</a>
+      <div style="display: none; text-align: left; text-indent: 30px;" id="QiYe">
+        <p> Qi Ye received the Ph.D. degree in applied mathematics from Illinois Institute of Technology in 2012. Now he is a professor of School of Mathematical Sciences and the director of Laboratory for Machine Learning and Computational Optimization at South China Normal University. He received the Sigma Xi Award at Chicago in 2012. His researches focus on the approximation theory to machine learning and data analysis such as kernel-based approximation methods. His original research of sparse machine learning is published in Memoirs of the American Mathematical Society. The sparse learning algorithms are already applied to the big data analysis of education and medicine to develop the educational and medical softwares. Now he will combine the model‑driven and data‑driven methods to construct the composite algorithms to develop the new learning methods. </p>
+      </div>
+      <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+    </div>
+    </div>
+
+    <!-- row 3-->
+    <div class="row tworow">
+      <!-- row 3 col 1-->
+      <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/YShen.png" alt="Yiqing" width="200px" height="200px">
+        <h3>Yiqing Shen</h3>
+        <p class="lead" style="margin-bottom:0;">Johns Hopkins University</p>
+        <a onclick="showhide('Yiqing')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Yiqing">
+          <p> Yiqing is a CS Ph.D. Student of Johns Hopkins University. He obtained his bachelor degree from Shanghai Jiao Tong University. His research interests span the fields of medical image analysis, computer vision, and particularly, their interdisciplinary direction. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+
+      <!-- row 3 col 2-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/Sonoda.jfif" alt="Sonoda" width="200px" height="200px">
+        <h3>Sho Sonoda</h3>
+        <p class="lead" style="margin-bottom:0;">RIKEN</p>
+        <a onclick="showhide('Sonoda')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Sonoda">
+          <p>... </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+
+      <!-- row 3 col 3-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/huan xiong 1.png" alt="Huan" width="200px" height="200px">
+        <h3>Huan Xiong</h3>
+        <p class="lead" style="margin-bottom:0;">Harbin Institute of Technology</p>
+        <a onclick="showhide('Huan')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Huan">
+          <p> Dr Huan Xiong is currently a Full Professor and Department Vice Director at the Harbin Institute of Technology, and an Adjunct Assistant Professor at the Mohamed bin Zayed University of Artificial Intelligence. Previously, he was a postdoctoral researcher at the University of Strasbourg, France. He received the B.S. and M.S. degrees from the School of Mathematical Sciences, Peking University, China, in 2010 and 2013, respectively, and the Ph.D. degree from the University of Zurich, Switzerland, in 2016. His research interests include Machine Learning and Discrete Mathematics. He has published over 30 papers in top journals/conferences such as TPAMI, ICML, NeurIPS, AAAI, CVPR, ICCV and ECCV. He has organized the conferences “Combinatorics and its Applications” at the Harbin Institute of Technology in 2018, and  “Workshop on Combinatorics and Graph Theory” at the Harbin Institute of Technology in 2021.
+          </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+    </div>
+
+    <!-- row 4-->
+    <div class="row tworow">
+      <!-- row 4 col 1-->
+      <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/JXuan.jfif" alt="Junyu" width="200px" height="200px">
+        <h3>Junyu Xuan</h3>
+        <p class="lead" style="margin-bottom:0;">University of Technology Sydney</p>
+        <a onclick="showhide('Junyu')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Junyu">
+          <p> Dr Junyu Xuan is an ARC Discovery Early Career Researcher Award (DECRA) Fellow and Senior Lecturer of Australia Artificial Intelligence Institute in Faculty of Engineering and IT at the University of Technology Sydney (UTS).
+          He received a dual-doctoral degree from the University of Technology Sydney and Shanghai University in 2016. After his Ph.D., he worked as a Postdoctoral Research Fellow in the Faculty of Engineering and IT of the University of Technology Sydney in Australia for three years. In 2020, he secured an ARC Discovery Early Career Researcher Award and became a Lecturer at UTS.
+          </p>
+          <p>  Dr Xuan’s research interests include Machine Learning, Bayesian Nonparametric Learning, Text Mining, Web Mining, etc. He has published over 40 papers in high-quality journals and conferences, including Artificial Intelligence Journal, Machine Learning Journal, IEEE TNNLS, IEEE TFS, IEEE TKDE, IEEE TCYB, ACM TOIS, ACM TIST, ACM Computing Surveys, ICDM, NeurIPS, AAAI, IJCNN, etc. He severed as PC or Senior PC member for conferences, e.g. NIPS, ICML, ICLR, ACML, IJCAI, AAAI, IJCNN, ICONIP, etc. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+
+      <!-- row 4 col 2-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/mengjiaxu.jpg" alt="Mengjia" width="200px" height="200px">
+        <h3>Mengjia Xu</h3>
+        <p class="lead" style="margin-bottom:0;">Massachusetts Institute of Technology</p>
+        <a onclick="showhide('Mengjia')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Mengjia">
+          <p> Dr. Mengjia Xu is currently a postdoc associate working at McGovern Institute for Brain Research, Center for Brains, Minds and Machines (CBMM) at MIT with Prof. Tomaso Poggio, and with Prof. George Karniadakis from the Division of Applied Mathematics at Brown University. Before joining MIT and Brown, she completed her PhD degree at the Department of Computer Science, Northeastern University (China) and two-year visiting PhD at Brown University. Her current research focuses on the optimization of deep neural networks, spatio-temporal graph representation learning, uncertainty quantification, and biomedical imaging data analysis for diverse applications. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+      
+      <!-- row 4 col 3-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/kaiyi.jpg" alt="Kai Yi" width="200px" height="200px">
+        <h3>Kai Yi</h3>
+        <p class="lead" style="margin-bottom:0;">The University of New South Wales</p>
+        <a onclick="showhide('max_welling')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Kai Yi">
+          <p>... </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+      <!-- /.col-lg-16 -->
+    </div>
+    
+    <!-- row 5-->
+    <div class="row tworow">
+      <!-- row 5 col 1-->
+      <div class="col-sm-4 wow fadeInDown text-center"> <img  class="magnify img-circle" src="img/speakers/XZhuang.jpg" alt="Xiaosheng" width="200px" height="200px">
+        <h3>Xiaosheng Zhuang</h3>
+        <p class="lead" style="margin-bottom:0;">City University of Hong Kong</p>
+        <a onclick="showhide('Xiaosheng')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Xiaosheng">
+          <p> Dr Xiaosheng Zhuang received his bachelor's degree and master's degree in mathematics from Sun Yat-Sen (Zhongshan) University, China, in 2003 and 2005, respectively. He received his PhD in applied mathematics from University of Alberta, Canada, in 2010. He was a Postdoctoral Fellow at Universität Osnabrück in 2011 and Technische Universität Berlin in 2012. His research interest includes directional multiscale representation systems, image/signal processing, and compressed sensing. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+      
+      <!-- row 5 col 2-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/DZou.jfif" alt="Dongmian" width="200px" height="200px">
+        <h3>Dongmian Zou</h3>
+        <p class="lead" style="margin-bottom:0;">Duke Kunshan University</p>
+        <a onclick="showhide('Dongmian')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Dongmian">
+          <p> Prof Dongmian Zhou's primary research is in the intersection among applied harmonic analysis, machine learning and signal processing. He is especially interested in robust representations and structures in geometric and graph deep learning. His teaching interests at Duke Kunshan include calculus, linear algebra, principles of machine learning, statistical machine learning.
+           He has had papers published in leading academic journals in various areas including Applied and Computational Harmonic Analysis and IEEE Transactions on Information Theory, and at and conferences such as the International Conference on Learning Representations.
+            </p>
+             <p> He has a B.Sc. in mathematics from the Chinese University of Hong Kong and a Ph.D. in applied mathematics from the University of Maryland, College Park. Before joining Duke Kunshan, he served as a post-doctorate researcher at the University of Minnesota, Twin Cities. </p>
+        </div>
+        </div>
+
+        <!-- row 5 col 3-->
+        <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/xinliang 1.png" alt="Xinliang" width="200px" height="200px">
+        <h3>Xinliang Liu</h3>
+        <p class="lead" style="margin-bottom:0;">KAUST</p>
+        <a onclick="showhide('Xinliang')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Xinliang">
+          <p> Dr Xinliang Liu is a postdoc in KAUST. He is working on deep learning methods for numerical PDE and graph neural networks. He obtained his PhD in Mathematics from Shanghai Jiao Tong University.
+            </p>
+        </div>
+      </div>
+        <!-- <br/> -->
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+    </div>
+
+    
+    <div class="row tworow">
+    <!-- row 6 col 1-->
+    <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/Mishra.jfif" alt="Challenger" width="200px" height="200px">
+      <h3>Challenger Mishra</h3>
+      <p class="lead" style="margin-bottom:0;">University of Cambridge</p>
+      <a onclick="showhide('Challenger')">Show/Hide Bio</a>
+      <div style="display: none; text-align: left; text-indent: 30px;" id="Challenger">
+        <p> Challenger is a theoretical physicist working on the long-standing problem of quantising gravity. Recently, he started to undertake work in Theoretical Machine Learning, in order to exploit its tools to understand String Theory as a problem in big data. As a Rhodes Scholar he has pursued his passion in understanding fundamental physical processes by undertaking doctoral work in String Theory at the Rudolf Peierls Centre for Theoretical Physics, University of Oxford. During his recently completed thesis, he worked on understanding various aspects of complex geometries that feature in String Theory, using the tools of differential and algebraic-geometry. Prior to this, Challenger completed his undergraduate work in Physics from the Indian Institute of Science Education and Research, Kolkata. During his undergraduate years, he worked on a NASA-sponsored project applying stochastic optimisation techniques to analyse data from the proposed gravitaional wave detector, LISA. When he isn’t tied up in stringy or machine learning affairs, he likes to show off his constantly diminishing skills in table tennis. After OATML, Challenger was appointed as an Accelerate Science Research Fellow at the University of Cambridge. </p>
+      </div>
+       <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+    </div>
+    <!-- row 6 col 2-->
+      <div class="col-sm-4  wow fadeInDown text-center"> <img class="magnify img-circle" src="img/speakers/JChen.jpg" alt="Jialin Chen" width="200px" height="200px">
+        <h3>Jialin Chen</h3>
+        <p class="lead" style="margin-bottom:0;">Yale University</p>
+        <a onclick="showhide('Jialin')">Show/Hide Bio</a>
+        <div style="display: none; text-align: left; text-indent: 30px;" id="Jialin">
+          <p> Jialin is PhD student in CS Department of Yale University, working on geometric deep learning and its applications. 
+            She is an undergraduate of Zhiyuan College at Shanghai Jiao Tong University with honours and outstanding thesis. </p>
+        </div>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div>
+        <br/>
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+    </div>
+      <!-- /.col-lg-18 -->
+    <!-- </div> -->
+    <!-- /.row -->
+  </div>
+</div>
+
+<!-- Schedule -->
+<div id ="schedule" class="content-section-a">
+  <div class="container">
+    <h2 class="section-heading">Schedule</h2>
+      
+      <p class="lead">
+        The ICIAM 2023 Conference sessions will be held on the Tokyo local afternoon (UTC+9) over two days, 
+        August 21 and August 22. 
+        Keynote speakers are allotted 30 minutes and invited speakers 20 minutes including Q&A. 
+        On August 21, sessions will be held in Room 1C (13:30-15:00) and Room 1D (15:30-17:10). 
+        On August 22, sessions will be in Room 1E (13:30-15:00) and Room 2C (15:30-17:10). * indicates keynote speakers.</br></br>
+        <b>Zoom for online talks</b>: <br/>
+        <a href="https://iciam2023.org/3219#Zoom_Events">https://iciam2023.org/3219#Zoom_Events </a> <br/><br/>
+        For non-registered participants, use the following link:
+        Join from PC, Mac, Linux, iOS or Android: <a href="https://unsw.zoom.us/j/83673273013?pwd=Q2hpalVUY3pwdlU4VFhHdmVCa25aZz09">https://unsw.zoom.us/j/83673273013?pwd=Q2hpalVUY3pwdlU4VFhHdmVCa25aZz09</a>
+        <br/>
+        Meeting ID: 83673273013<br/>
+        Password: 152671
+      </p>
+
+      
+    <!-- <table id="timeTable">
+      <tr>  
+          <th style="width:120px;">Date</th>
+          <th style="width:120px;">Time (Tokyo)</th>
+          <th style="width:120px;">Time (Local)</th>
+          <th style="width:120px;">Room</th>
+          <th style="width:300px;">Speaker</th>
+          <th>Title</th>
+      </tr>
+
+      <tr> <td colspan="6" align="center"><b>Day 1</b></td> </tr>
+
+      <tr>
+          <td>Aug 21</td>
+          <td id="tokyoTime">13:30</td>
+          <td id="localTime">13:30</td>
+          <td>1C</td>
+          <td><i>Yuguang Wang</i> (SJTU)</td>
+          <td>Opening Remarks</td>
+      </tr>
+
+      <tr>
+          <td>Aug 21</td>
+          <td id="tokyoTime">13:40</td>
+          <td id="localTime">13:40</td>
+          <td>1C</td>
+          <td><i>Xiaowen Dong</i> (Oxford)</td>
+          <td>On the stability of spectral graph filters and beyond</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 21</td>
+      <td>14:10</td>  
+      <td>1C</td>
+      <td><i>Xiaosheng Zhuang</i> (CityU HK)</td>
+      <td>Spherical Framelets with Directionality for Spherical Neural Networks</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 21</td> 
+      <td>14:30</td>
+      <td>1C</td>
+      <td><i>Huan Xiong</i> (HIT & MBZUAI)</td>
+      <td>Some Applications of Hyperplane Arrangements in Deep Learning</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 21</td>
+      <td>14:50</td>
+      <td>1C</td>
+      <td><i>Yiqing Shen</i> (JHU)</td>
+      <td>Graph-Structured Knowledge Enhanced Large Language Model</td>
+      </tr>
+      
+      <tr>
+        <td>Aug 21</td>
+        <td>15:10</td>
+        <td>Lobby</td>
+        <td></td>
+        <td colspan="2" align="center"><i>Tea break</i></td>
+      </tr>
+
+      <tr>
+      <td>Aug 21</td>  
+      <td>15:30</td>
+      <td>1D</td>
+      <td><i>Gitta Kutyniok</i> (LMU)</td>
+      <td>Generalization Capabilities of Graph Neural Networks</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 21</td>
+      <td>16:10</td>
+      <td>1D</td> 
+      <td><i>Qi Ye</i> (SCNU)</td>
+      <td>Machine Learning in Banach Spaces: A Black-box or White-box Method?</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 21</td>
+      <td>16:30</td>
+      <td>1D</td>  
+      <td><i>Dongmian Zou</i> (DKU)</td>
+      <td>Stable Hyperbolic Neural Networks for Graph Generation and Classification</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 21</td>  
+      <td>16:50</td>
+      <td>1D</td>
+      <td><i>Teresa Huang</i> (JHU)</td>
+      <td>Spectral-Inspired Graph Neural Networks</td>
+      </tr>
+
+      <tr>
+        <td>Aug 21</td>
+        <td>17:10</td>
+        <td>Lobby</td>
+        <td></td>
+        <td colspan="2" align="center"><i>Tea break</i></td>
+      </tr>
+
+      <tr>
+        <td>Aug 21</td>
+        <td>17:40</td>
+      <td>1E</td>
+      <td><i>Junyu Xuan</i> (UTS)</td>
+      <td>Negative sampling for graph neural networks based on determinantal point processes</td>
+      </tr>
+
+      <tr>
+        <td>Aug 21</td>
+        <td>18:00</td>
+        <td>1E</td>
+        <td><i>Yuanhong Jiang</i> (SJTU)</td>
+        <td>Scattering Message Passing</td>
+        </tr>
+
+        <tr>
+          <td>Aug 21</td>
+          <td>18:20</td>
+          <td>1E</td>
+          <td><i>Kai Yi</i> (UNSW)</td>
+          <td>Geometric Diffusion Generative model for protein sequence design</td> 
+          </tr>
+          
+          <tr>
+          <td>Aug 21</td>
+          <td>18:40</td>
+          <td>1E</td>
+          <td><i>Sho Sonoda</i> (RIKEN)</td>  
+          <td>Ridgelet Transforms of Neural Network on Manifolds and Hilbert Spaces</td>
+          </tr>
+        
+        <tr>
+        <td>Aug 21</td>
+        <td>19:00</td>
+        <td>Online</td>
+        <td><i>Francesco Di Giovanni</i> (Cambridge)</td>
+        <td>On oversquashing and expressivity: can GNNs mix variables?</td>
+      </tr>
+  
+        <tr>
+          <td>Aug 21</td>  
+          <td>19:20</td>
+          <td>Online</td>
+          <td><i>Cristian Bodnar</i> (Microsoft)</td>
+          <td>Geometric Deep Learning from a Topological Viewpoint</td>
+        </tr>
+
+      <tr> <td colspan="5" align="center"><b>Day 2</b></td> </tr>
+
+      <tr>
+        <td>Aug 22</td>
+        <td>13:20</td>
+        <td>2C</td>
+        <td><i>Guido Montufar</i> (UCLA & MPI)</td>
+        <td>FoSR: First-order spectral rewiring for addressing oversquashing in GNNs</td>
+      </tr>
+
+      <tr> 
+      <td>Aug 22</td>
+      <td>13:50</td>
+      <td>2C</td>
+      <td><i>Mengjia Xu</i> (BrownU & MIT)</td>
+      <td>DynG2G: An Efficient Stochastic Graph Embedding Method for Temporal Graphs</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 22</td>  
+      <td>14:10</td>
+      <td>2C</td>
+      <td><i>Lin Liu</i> (SJTU)</td>
+      <td>Root-n consistent semiparametric learning under minimal sparsity conditions</td>
+      </tr>
+      
+      <tr>
+      <td>Aug 22</td>
+      <td>14:30</td>
+      <td>2C</td>
+      <td><i>Yuelin Wang</i> (SJTU)</td>
+      <td>Dynamic systems for neural message passing on graphs</td>
+      </tr> 
+      
+      </table> -->
+
+<table id="timeTable">
+  <tr>
+  <th style="width:90px;">Date</th>
+  <th style="width:120px;">Time (Tokyo)</th>
+  <!-- <th style="width:120px;">Time (Local)</th> -->
+  <th style="width:120px;">Room</th>
+  <th style="width:300px;">Speaker</th>
+  <th>Title</th>
+  </tr>
+
+  <tr> <td colspan="6" align="center"><b>Day 1</b></td> </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">13:20</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>E812</td>
+    <td><i>Yuguang Wang</i> (SJTU)</td>
+    <td>Opening Remarks</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">13:30</td>
+  <!-- <td id="localTime">13:40</td> -->
+  <td>E812</td>
+  <td><i>Xiaowen Dong</i> (Oxford)*</td>
+  <td>On the stability of spectral graph filters and beyond</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">14:00</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Xiaosheng Zhuang</i> (CityU HK)</td>
+  <td>Spherical Framelets with Directionality for Spherical Neural Networks</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">14:20</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Huan Xiong</i> (HIT & MBZUAI)</td>
+  <td>Some Applications of Hyperplane Arrangements in Deep Learning</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">14:40</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Yiqing Shen</i> (JHU)</td>
+  <td>Graph-Structured Knowledge Enhanced Large Language Model</td>
+  </tr>
+  
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">15:00</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>Lobby</td>
+    <td></td>
+    <td colspan="2" align="center"><i>Tea break</i></td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">15:30</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Qi Ye</i> (SCNU)</td>
+  <td>Machine Learning in Banach Spaces: A Black-box or White-box Method?</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">15:50</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Dongmian Zou</i> (DKU)</td>
+  <td>Stable Hyperbolic Neural Networks for Graph Generation and Classification</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">16:10</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Teresa Huang</i> (JHU)</td>
+  <td>Spectral-Inspired Graph Neural Networks</td>
+  </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">16:30</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>Online</td>
+    <td><i>Cristian Bodnar</i> (Microsoft)*</td>
+    <td>Geometric Deep Learning from a Topological Viewpoint</td>
+  </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">17:10</td> 
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>Lobby</td>
+    <td></td>
+    <td colspan="2" align="center"><i>Tea break</i></td>
+  </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">17:40</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>E812</td>
+    <td><i>Junyu Xuan</i> (UTS)</td>
+    <td>Negative sampling for graph neural networks based on determinantal point processes</td>
+  </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">18:00</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>E812</td>
+    <td><i>Yuanhong Jiang</i> (SJTU)</td>
+    <td>Scattering Message Passing</td>
+  </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">18:20</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>E812</td>
+    <td><i>Kai Yi</i> (UNSW)</td>
+    <td>Geometric Diffusion Generative model for protein sequence design</td>
+  </tr>
+  
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">18:40</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Sho Sonoda</i> (RIKEN)</td>
+  <td>Ridgelet Transforms of Neural Network on Manifolds and Hilbert Spaces</td>
+  </tr>
+
+  <tr>
+  <td>Aug 21</td>
+  <td id="tokyoTime">19:00</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>Online</td>
+  <td><i>Francesco Di Giovanni</i> (Cambridge)*</td>
+  <td>On oversquashing and expressivity: can GNNs mix variables?</td>
+  </tr>
+
+  <tr>
+    <td>Aug 21</td>
+    <td id="tokyoTime">19:40</td>
+    <!-- <td id="localTime">Loading ...</td>  -->
+    <td>Online</td>
+    <td><i>Challenger Mishra</i> (Cambridge)</td>
+    <td>Mathematical Conjecture Generation and Machine Intelligence</td>
+  </tr>
+
+<tr> <td colspan="6" align="center"><b>Day 2</b></td> </tr>
+
+<tr>
+  <td>Aug 22</td>
+  <td id="tokyoTime">13:20</td>
+  <!-- <td id="localTime">Loading ...</td>  -->
+  <td>E812</td>
+  <td><i>Guido Montufar</i> (UCLA & MPI)*</td>
+  <td>FoSR: First-order spectral rewiring for addressing oversquashing in GNNs</td>
+</tr>
+
+<tr>
+<td>Aug 22</td>
+<td id="tokyoTime">13:50</td>
+<!-- <td id="localTime">Loading ...</td>  -->
+<td>E812</td>
+<td><i>Mengjia Xu</i> (BrownU & MIT)</td>
+<td>DynG2G: An Efficient Stochastic Graph Embedding Method for Temporal Graphs</td>
+</tr>
+
+<tr>
+<td>Aug 22</td>
+<td id="tokyoTime">14:10</td>
+<!-- <td id="localTime">Loading ...</td>  --> 
+<td>E812</td>
+<td><i>Lin Liu</i> (SJTU)</td>
+<td>Root-n consistent semiparametric learning under minimal sparsity conditions</td>
+</tr>
+
+<tr>
+<td>Aug 22</td>
+<td id="tokyoTime">14:30</td>
+<!-- <td id="localTime">Loading ...</td>  -->
+<td>E812</td>
+<td><i>Yuelin Wang</i> (SJTU)</td>
+<td>Dynamic systems for neural message passing on graphs</td>
+</tr>
+
+</table>
+
+
+<!-- Your JavaScript code to update the local time based on the Tokyo time -->
+<script>
+  // Function to convert Tokyo time to Local time
+  function convertToLocaleTime(tokyoTime) {
+      // Replace 'Asia/Tokyo' with the appropriate timezone for your conference
+      const tokyoTimeZone = 'Asia/Tokyo';
+      const localTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+      const tokyoDate = new Date(`2023-08-21T${tokyoTime}:00.000Z`); // Assuming the conference is in 2023
+      const localDate = new Date(tokyoDate.toLocaleString('en-US', { timeZone: localTimeZone }));
+
+      return localDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Function to update the local time for each row
+  function updateLocalTimes() {
+      const tokyoTimeElements = document.querySelectorAll('#tokyoTime');
+      const localTimeElements = document.querySelectorAll('#localTime');
+      for (let i = 0; i < tokyoTimeElements.length; i++) {
+          const tokyoTimeElement = tokyoTimeElements[i];
+          const localTimeElement = localTimeElements[i];
+          localTimeElement.textContent = convertToLocaleTime(tokyoTimeElement.textContent);
+      }
+  }
+
+  // Call the function to update the local time on page load
+  updateLocalTimes();
+
+  // Get the local IP and update the local time when the browser is refreshed
+  window.addEventListener('load', async () => {
+      try {
+          const response = await fetch('https://api64.ipify.org?format=json');
+          const data = await response.json();
+          const localIP = data.ip;
+          // Optionally, you can do something with the local IP here
+          console.log('Local IP:', localIP);
+
+          // Update the local time after fetching the local IP
+          updateLocalTimes();
+      } catch (error) {
+          console.error('Error fetching the local IP:', error);
+      }
+  });
+</script>
+      
+  </div>
+</div>
+
+<div id="organizers" class="content-section-a" style="border-top: 0">
+    <div class="container">
+      <h2 class="section-heading">Organizers</h2>
+      <div class="row wow fadeInRightBig"  data-animation-delay="200">
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+          <h4 class="section-heading">
+            <center>
+              Yu Guang Wang
+            </center>
+          </h4>
+          <center>
+            <img  class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizer/yuguang-2.png" alt="yuguang21">
+          </center>
+          <h5 class="section-heading">
+            <center>
+              <i>Shanghai Jiao Tong University</i>
+            </center>
+          </h5>
+        </div>
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+          <h4 class="section-heading">
+            <center>
+              Yuelin Wang
+            </center>
+          </h4>
+          <center>
+            <img  class="magnify img-responsive img-circle" height="155px" width="155px" src="img/organizer/yuelin.jpg" alt="Yuelin Wang">
+          </center>
+          <h5 class="section-heading">
+            <center>
+              <i>Shanghai Jiao Tong University</i>
+            </center>
+          </h5>
+        </div>
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+          <h4 class="section-heading">
+            <center>
+              Yiqing Shen
+            </center>
+          </h4>
+          <center>
+            <img  class="magnify img-responsive img-circle" height="145px" width="145px" src="img/organizer/yiqing-nobg.png" alt="Yiqing Shen">
+          </center>
+          <h5 class="section-heading">
+            <center>
+              <i>Johns Hopkins University</i>
+            </center>
+          </h5>
+        </div>
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+          <h4 class="section-heading">
+            <center>
+              Bingxin Zhou
+            </center>
+          </h4>
+          <center>
+            <img  class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizer/bingxin-1.jpg" alt="bingxin">
+          </center>
+          <h5 class="section-heading">
+            <center>
+              <i>Shanghai Jiao Tong University</i>
+            </center>
+          </h5>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- 赞助 -->
+<div id="sponsors" class="content-section-a" style="border-top: 0">
+    <div class="container">
+      <h2 class="section-heading">Sponsors</h2><br/>
+      <div class="row align-items-center justify-content-center wow fadeInLeftBig"  data-animation-delay="200">
+        <div class="col-md-6 wow fadeInLeftBig"  data-animation-delay="200"> <img  class="center" style="" height="100" src="./img/applmathcenter.png" alt="SNC Logo"> 
+        </div>
+        <div class="col-md-6 wow fadeInLeftBig"  data-animation-delay="200"> <img  class="center" style="" height="100" src="./img/ins-1.png" alt="ins Logo"> 
+        </div>
+        <!-- <div class="col-md-4 wow fadeInLeftBig"  data-animation-delay="200"> <img  class="center" style="" height="100" src="./img/Toursun.png" alt="Toursun Logo"> </div> -->
+      </div>
+   </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="contact">
+        <h3 class="footer-title">Contact</h3>
+        <p> Please contact <a href = "mailto: mathdgl.iciam@gmail.com">mathdgl.iciam@gmail.com</a> with any questions. </p>
+      </div>
+      <!-- /col-xs-7 -->
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<!-- StikyMenu -->
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+
+		});
+	  });
+
+	</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	 new WOW().init();
+	</script>
+<script src="js/classie.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+</body>
+</html>

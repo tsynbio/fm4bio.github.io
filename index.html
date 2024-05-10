@@ -1,0 +1,502 @@
+<!doctype html>
+<!-- FlatFy Theme - Andrea Galanti /-->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html>
+
+<head>
+  <style>
+  table {
+    border-collapse: collapse;
+    line-height: 3;
+    width: 100%; /* Ensures the table spans the full width of its container */
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  ul {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  li {
+    padding-bottom: 4px;
+  }
+
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  </style>
+
+<!-- <script>
+// Timezone converter function 
+function convertTime(date, offset) {
+  var utcDate = new Date(date.toLocaleString('en-US', {timeZone: 'Asia/Tokyo'}));
+  var newDate = new Date(utcDate.getTime() + (offset*60*60*1000));
+  return newDate.toLocaleTimeString(); 
+}
+
+// Get user's timezone offset
+var offset = new Date().getTimezoneOffset()/60; 
+
+// Convert times on page load
+window.onload = function() {
+  var times = document.querySelectorAll("td:nth-child(2)");
+  for(var i=0; i<times.length; i++) {
+    var tokyoTime = times[i].textContent; 
+    var localTime = convertTime(new Date("08/21/2023 " + tokyoTime), offset);
+    times[i].textContent = localTime;
+  }
+}
+
+</script> -->
+
+</head>
+
+
+
+
+  
+  
+<!--<![endif]-->
+<script>
+function showhide(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="Workshop">
+<meta name="author" content="">
+<title>Foundation Models for Bioinformatics andBiomedicine</title>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Google Web Font -->
+<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+
+<!-- Custom CSS-->
+<link href="css/general.css" rel="stylesheet">
+
+<!-- Owl-Carousel -->
+<link href="css/custom.css" rel="stylesheet">
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css">
+<script src="js/modernizr-2.8.3.min.js"></script> <!-- Modernizr /-->
+<!--[if IE 9]>
+		<script src="js/PIE_IE9.js"></script>
+	<![endif]-->
+<!--[if lt IE 9]>
+		<script src="js/PIE_IE678.js"></script>
+	<![endif]-->
+
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="home">
+
+<!-- Preloader -->
+<div id="preloader">
+  <div id="status"></div>
+</div>
+
+<!-- FullScreen -->
+<div class="intro-header">
+  <div class="col-xs-12 text-center abcen1">
+    <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Foundation Models for<br /> Bioinformatics and Biomedicine</h1>
+
+    <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Dec 5-8, 2024</h3>
+  <!--   <ul class="list-inline intro-social-buttons">
+      <a href="https://neurips.cc/virtual/2022/workshop/50005" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Livestream</span></a> </li>
+    </ul> -->
+  </div>
+  <!-- /.container -->
+  <div class="col-xs-12 text-center abcen wow fadeIn">
+    <div class="button_down "> <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#about"> <img class="img_scroll" src="img/icon/circle.png" alt="Go down to content"> </a> </div>
+  </div>
+</div>
+
+<!-- NavBar-->
+<nav class="navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="/">BIBM 2024</a> </div>
+      <!-- <a class="navbar-brand" href="#home">MGDL</a> </div> -->
+    <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="menuItem"><a href="#about">About</a></li>
+        <!-- <li class="menuItem"><a href="#callforpapers">Call for Papers</a></li> -->
+        <li class="menuItem"><a href="#faq">FAQ</a></li>
+        <li class="menuItem"><a href="#topics">Research Topics</a></li>
+        <!-- <li class="menuItem"><a href="#invitedspeakers">Invited Speakers</a></li> -->
+        <!-- <li class="menuItem"><a href="#preregistration">Pre-Registration</a></li> -->
+        <li class="menuItem"><a href="#schedule">Schedule</a></li>
+        <!-- <li class="menuItem"><a href="#accepted">Accepted Papers</a></li> -->
+        <li class="menuItem"><a href="#organizers">Organizers</a></li>
+        <!--<li class="menuItem"><a href="#related">Related Workshops</a></li> -->
+        <!-- <li class="menuItem"><a href="#sponsors">Sponsors</a></li> -->
+        <!-- <li class="menuItem"><a href="#contact">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About -->
+<div id="about" class="content-section-a" style="border-top: 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInLeftBig" data-animation-delay="200">
+        <h2 class="section-heading">About</h2>
+        <p class="lead">Foundation models like large language models and vision-language models have been pivotal in the transformation of artificial intelligence. Trained on vast datasets, these models exhibit extraordinary abilities in understanding and generating natural language and analyzing visual content. Their success across general domains has fueled exploration into specialized applications within bioinformatics and biomedicine—fields deeply entrenched in complex data.</p>
+        <p class="lead"> Bioinformatics and biomedicine leverage computational power to decipher intricate biological and medical data. Integrating foundation models into these areas promises substantial advancements in research and healthcare outcomes. Applications range from biomedical image analysis and drug discovery to protein design and personalized medicine, exploiting the abundance of data to foster novel discoveries and enhance decision-making processes.
+        <p class="lead">This workshop is dedicated to unveiling the potential of foundation models within bioinformatics and biomedicine. We aim to bring together a diverse group of researchers and industry experts to foster collaboration, share cutting-edge solutions, and discuss both the opportunities and challenges of applying foundation models in critical biomedical sectors. Join us as we delve into the transformative capabilities of these models in driving forward the future of medicine and healthcare technology.</p>
+    </p>
+        <!-- <p class="lead"> MGDL will be an in-person AND online workshop with hybrid elements (livestream + chat for questions) in <b>Room 288 - 289 on Saturday, December 3rd, 2022</b> at <a href="https://neurips.cc">NeurIPS</a>. </p> -->
+        <!-- <p class="lead"> Stay updated on changes and workshop news by joining <a href="https://groups.google.com/g/workshopmlsb">our mailing list</a>. </p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div id ="faq" class="content-section-b">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInLeftBig" data-animation-delay="200">
+        <h2 class="section-heading">FAQ</h2>
+        <!-- <h3 class="section-heading">Event Photos</h3>
+        <p class="lead">Photos can be found at Google Drive: <a href="https://drive.google.com/drive/folders/1jJ4eDP1UF1jVhe-AIqhgcfi5uTbm9Z96?usp=sharing">https://drive.google.com/drive/folders/1jJ4eDP1UF1jVhe-AIqhgcfi5uTbm9Z96?usp=sharing</a> <br/>
+      <br/></p> -->
+
+        <!-- <h3 class="section-heading">ICIAM Program</h3>
+        <p class="lead">The congress schedule can be found at <a href="https://iciam2023.org/3051">https://iciam2023.org/3051</a> <br/>
+      For our MS, the schedule can be seen below, and also <a href="https://iciam2023.org/registered_data?id=00211">https://iciam2023.org/registered_data?id=00211</a> <br/></p> -->
+
+      <h3 class="section-heading">Zoom Event</h3>
+        <!-- <p class="lead">Our minisymposium is in hybrid format of in person talks and online talks. </br>
+          <b>Zoom for online talks</b>: </br>
+          <a href="https://iciam2023.org/3219#Zoom_Events">https://iciam2023.org/3219#Zoom_Events </a> <br/>
+          For non-registered participants, use the following link:
+          Join from PC, Mac, Linux, iOS or Android: <a href="https://unsw.zoom.us/j/83673273013?pwd=Q2hpalVUY3pwdlU4VFhHdmVCa25aZz09">https://unsw.zoom.us/j/83673273013?pwd=Q2hpalVUY3pwdlU4VFhHdmVCa25aZz09</a>
+          <br/>
+          Meeting ID: 83673273013<br/> -->
+          <!-- Password: 152671 -->
+          <p>The workshop will be conducted in a fully virtual format. The organizers will arrange Zoom as the virtual meeting platform to facilitate seamless interaction, presentations, and discussions among the participants.</p>
+        </p>
+
+      <!-- <h3 class="section-heading">Direction to Session Venure</h3>
+          <p class="lead">Our session is in the campus of Waseda University <b>E812 of Building 11</b>. <br/>
+          
+            <div class="col-sm-12 wow fadeInDown text-center"> <img class="magnify img-square" src="img/venure/Waseda_map.jpg" alt="Waseda map" width="800px"><br/>
+              </div> <br/>
+          </p> -->
+       
+        <!-- <h3 class="section-heading">To Submit Talk</h3>
+        <p class="lead">Please log in the submission system at <a href="https://review.iciam2023.org/">https://review.iciam2023.org/</a> <br/>
+          Then choose <b>New Submission</b> with Minisymposium Identifier Code [MIC] as <b>VS6WWB55</b><br/>
+        There you can submit your talk and author information to be reviewed. </br>
+      The talk title and abstract and your bio will also be put on the this website. </br>
+      Please make submission at least one week before the <a href="https://iciam2023.org/555/">submission deadline April 20, 2023.</a> <br/></p> -->
+
+      <!-- <h3 class="section-heading">Registration</h3>
+      Registration deadline of the ICIAM 2023 is April 10, 2023. <br/>
+      The registration information (fees) can be found <a href="https://iciam2023.org/571/">https://iciam2023.org/571</a> <br/>
+      Registration page needs to also log in <a href="https://review.iciam2023.org/">https://review.iciam2023.org/</a> -->
+
+
+       <!-- <h3 class="section-heading">Visa Support / Invitation Letter</h3>
+       You will need a registration number to obtain an invitation letter for visa application. <br/>
+       Visa support can be applied in <a href="https://review.iciam2023.org/">https://iciam2023.org/1519/</a> <br/>
+       The cost of visa support is included in the registration fee.
+
+       <h3 class="section-heading">Hotel Reservation</h3>
+       During the conference time period, hotels in Tokyo are expected to be crowded. 
+     We highly recommend that you make your hotel reservations as soon as possible. In order to assist you, we have partnered with Waseda University Academic Solutions, Inc. (WAS) to offer discounted rates for hotel rooms. WAS, a subsidiary of Waseda University, has been providing administrative solutions for universities for many years.</br>
+       To access the <a href="https://iciam2023.org/578">hotel reservation page</a>, please visit the ICIAM 2023 website. Please note that the number of available rooms is limited, and we encourage you to carefully read the cancellation policy and take responsibility for any cancellations. It is important to note that many of the rooms offered at the discounted price will be closed by the end of March 2023. To make a reservation, please contact WAS directly.
+
+       For hotel information, please refer to <a href="https://iciam2023.org/578">https://iciam2023.org/578</a>
+
+       <h3 class="section-heading">Flight Ticket Reservations</h3>
+       To assist with your travel plans, we have requested that WAS offer <a href="https://iciam2023.org/2364">flight reservation support</a>. </br>
+       If you would like to reserve flights through WAS, please contact them directly </br> after carefully reviewing the cancellation policy and assuming responsibility for any cancellations.</br>
+
+       Flight reservation support: <a href="https://iciam2023.org/2364">https://iciam2023.org/2364/</a>
+
+       <h3 class="section-heading">Childcare</h3>
+       For those with children, the organizers are providing childcare during the conference:
+       <a href="https://iciam2023.org/3259">https://iciam2023.org/3259</a></br> -->
+
+
+
+
+
+
+      <!-- <h3 class="section-heading">Visa</h3>
+
+      <h3 class="section-heading">Hotel</h3>
+
+      <h3 class="section-heading">Travel Information</h3> -->
+        <!-- <p> <b>WIFI</b> <br/>
+          network name: NeurIPS <br/>
+          password: conference </p>
+
+        <p> <b>SCHEDULE</b> MLSB will begin at 8:30am CST and end at 5:00pm CST on Saturday, Dec 3. The physical workshop will take place in Room 288 - 289 in the New Orleans Convention Center. The schedule of talks and poster sessions is available at our website, mlsb.io and on the <a href="https://neurips.cc/virtual/2022/workshop/50005">NeurIPS website</a>. </p>
+        <p> <b>PANEL</b> -
+          We will be hosting a panel discussion including our invited speakers on research directions in Machine Learning for Structural Biology from 2:50-3:50p CST. We are soliciting additional discussion topics and questions -- let us know what you would like to hear about by filling out this google form: <a href="https://forms.gle/fiJ6ZzsmepKL87tMA">https://forms.gle/fiJ6ZzsmepKL87tMA</a>. </p>
+        <p> <b>POSTER SESSIONS</b> -
+          We have scheduled two poster sessions at 11:15-12:15pm CST and 3:50-4:50pm CST. Posters can be set up before the conference begins, between 8:00-8:30am, during the break between 9:45-10:05am, or at the beginning of the first poster session.
+
+          We ask that posters are 24"W x 36"H, as there may be space constraints in the room that limit the display of wider posters. However, if you already have a poster of a different size, it is acceptable to use that. </p>
+        <p> <b>LUNCH + HAPPY HOUR</b> -
+          MLSB will be providing boxed lunches to attendees during the workshop. In addition, there will be a happy hour during the afternoon poster session, where drinks will be served (non-alcoholic options will be available). </p>
+        <p> <b>ORALS</b> -
+          Each oral will have a 15 minute timeslot. We anticipate that talks should last approximately 10 minutes, allowing 5 minutes for questions and transition between speakers. If you are presenting in-person, you may check slides before the workshop (8:00-8:30am CST) or during the break (9:45-10:05am CST). </p>
+        <p> Please check the schedule on our website, mlsb.io, for your presentation time. If you are not able to make this time, let us know as soon as possible. Additionally, below we have listed the format we currently have for each oral presentation (In-person, Live over Zoom, or Prerecorded). If this information is not correct, please let us know. You can contact us at workshopmlsb@gmail.com with any issues. </p>
+        <p> <b>VIRTUAL PARTICIPATION</b> -
+          MLSB will have some hybrid elements. There will be a livestream (a link is available at the <a href="https://neurips.cc/virtual/2022/workshop/50005">NeurIPS website</a>. Chat will be available on the NeurIPS workshop site for asking questions.
+
+          Currently, there is no official venue for presenting posters virtually at MLSB. However, we are considering options to enable greater virtual participation over the next few days. If you have a poster at MLSB but plan to participate only virtually, please let us know by adding your name to this <a href="https://forms.gle/ntQDsULXaVkzVXYR8">google form</a> as soon as possible. </p> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div id ="topics" class="content-section-a">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 wow fadeInLeftBig" data-animation-delay="200">
+          <h2 class="section-heading">RESEARCH TOPICS</h2>
+          <ul>
+            <li>- Foundation models for medical image analysis</li>
+            <li>- Foundation models for drug discovery</li>
+            <li>- Foundation models for the structure, function and dynamics of biomolecules (e.g., protein, DNA, RNA)</li>
+            <li>- Benchmarks and evaluations of foundation models for biomedicine</li>
+            <li>- Case studies, real-world applications of foundation models in bioinformatics and biomedicine</li>
+            <li>- Ethical considerations, privacy, and security aspects of foundation models in biomedicine</li>
+        </ul>
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Schedule -->
+<div id ="schedule" class="content-section-b">
+  <div class="container">
+    <h2 class="section-heading">Schedule</h2>
+      
+
+
+<table id="timeTable">
+  <tr>
+  <th style="width:20%;">Date</th>
+
+  <th style="width:auto;">Event</th>
+  </tr>
+
+
+  <tr>
+    <td>Jun 1, 2024</td>
+    <td>Workshop website open and send out call for papers</td>
+  </tr>
+
+  <tr>
+    <td>Aug 1, 2024</td>
+    <td>Submission open</td>
+  </tr>
+
+  <tr>
+    <td>Oct 10, 2024</td>
+    <td>Due date for full workshop papers submission</td>
+  </tr>
+
+  <tr>
+    <td>Nov 5, 2024</td>
+    <td>Notification of paper acceptance to authors</td>
+  </tr>
+
+
+  <tr>
+    <td>Nov 21, 2024</td>
+    <td>Camera-ready of accepted papers</td>
+  </tr>
+
+
+  <tr>
+    <td>Dec 5-8, 2024</td>
+    <td>Workshops</td>
+  </tr>
+
+
+  
+  
+</table>
+
+
+<!-- Your JavaScript code to update the local time based on the Tokyo time -->
+<script>
+  // Function to convert Tokyo time to Local time
+  function convertToLocaleTime(tokyoTime) {
+      // Replace 'Asia/Tokyo' with the appropriate timezone for your conference
+      const tokyoTimeZone = 'Asia/Tokyo';
+      const localTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+      const tokyoDate = new Date(`2023-08-21T${tokyoTime}:00.000Z`); // Assuming the conference is in 2023
+      const localDate = new Date(tokyoDate.toLocaleString('en-US', { timeZone: localTimeZone }));
+
+      return localDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Function to update the local time for each row
+  function updateLocalTimes() {
+      const tokyoTimeElements = document.querySelectorAll('#tokyoTime');
+      const localTimeElements = document.querySelectorAll('#localTime');
+      for (let i = 0; i < tokyoTimeElements.length; i++) {
+          const tokyoTimeElement = tokyoTimeElements[i];
+          const localTimeElement = localTimeElements[i];
+          localTimeElement.textContent = convertToLocaleTime(tokyoTimeElement.textContent);
+      }
+  }
+
+  // Call the function to update the local time on page load
+  updateLocalTimes();
+
+  // Get the local IP and update the local time when the browser is refreshed
+  window.addEventListener('load', async () => {
+      try {
+          const response = await fetch('https://api64.ipify.org?format=json');
+          const data = await response.json();
+          const localIP = data.ip;
+          // Optionally, you can do something with the local IP here
+          console.log('Local IP:', localIP);
+
+          // Update the local time after fetching the local IP
+          updateLocalTimes();
+      } catch (error) {
+          console.error('Error fetching the local IP:', error);
+      }
+  });
+</script>
+      
+  </div>
+</div>
+
+<div id="organizers" class="content-section-a" style="border-top: 0">
+    <div class="container">
+      <h2 class="section-heading">Organizers</h2>
+      <div class="row wow fadeInRightBig"  data-animation-delay="200">
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+            <h4 class="section-heading">
+              <center>
+                Yiqing Shen
+              </center>
+            </h4>
+            <center>
+              <img  class="magnify img-responsive img-circle" height="145px" width="145px" src="img/organizer/yiqing-nobg.png" alt="Yiqing Shen">
+            </center>
+            <h5 class="section-heading">
+              <center>
+                <i>Johns Hopkins University</i>
+              </center>
+            </h5>
+          </div>
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+          <h4 class="section-heading">
+            <center>
+              Yu Guang Wang
+            </center>
+          </h4>
+          <center>
+            <img  class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizer/yuguang-2.png" alt="yuguang21">
+          </center>
+          <h5 class="section-heading">
+            <center>
+              <i>Shanghai Jiao Tong University</i>
+            </center>
+          </h5>
+        </div>
+
+
+        <div class="col-sm-3 wow fadeInRightBig"  data-animation-delay="200">
+          <h4 class="section-heading">
+            <center>
+               Pietro Liò
+            </center>
+          </h4>
+          <center>
+            <img  class="magnify img-responsive img-circle" height="150px" width="150px" src="img/organizer/pietro.jpg" alt="bingxin">
+          </center>
+          <h5 class="section-heading">
+            <center>
+              <i>University of Cambridge</i>
+            </center>
+          </h5>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" id="contact">
+        <h3 class="footer-title">Contact</h3>
+        <p> Please contact <a href = "mailto: mathdgl.iciam@gmail.com">mathdgl.iciam@gmail.com</a> with any questions. </p>
+      </div>
+      <!-- /col-xs-7 -->
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/script.js"></script>
+<!-- StikyMenu -->
+<script src="js/stickUp.min.js"></script>
+<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
+
+		});
+	  });
+
+	</script>
+<!-- Smoothscroll -->
+<script type="text/javascript" src="js/jquery.corner.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+	 new WOW().init();
+	</script>
+<script src="js/classie.js"></script>
+<!-- Magnific Popup core JS file -->
+<script src="js/jquery.magnific-popup.js"></script>
+</body>
+</html>
